@@ -1,0 +1,75 @@
+
+body{
+    margin: 0px;
+}
+
+
+/* Body Header*/
+#body-head{
+    height: 65vh;
+    opacity: 0.9;
+    background-image: url("G:agumo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*Horizontal Lists*/
+.hori-list{
+    list-style: none;
+    padding-left: 0px;
+}
+.hori-list li{
+    display: inline-block;
+    margin: 15px 8px 0px 8px;
+}
+
+.hori-list li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s, border-bottom 4s;
+}
+.hori-list li a:hover{
+    color: rgb(241, 140, 140);
+    border-bottom: 1px solid white;
+}
+/* Text Center*/
+.text-center{
+    text-align: center;
+}
+#name-so-con{
+    margin-top: 20vh;
+}
+
+/*name*/
+.name{
+    list-style: none;
+    height: 110px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.name h1{
+    color: rgb(190, 225, 190);
+    display: inline-block;
+}
+.soc-ic{
+    list-style: none;
+    padding-left: 0px;
+}
+.soc-ic li{
+    display: inline-block;
+    margin: 0px 8px 0px 8px;
+}
+
+.soc-ic li  a i{
+    color: rgb(30, 8, 171);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.soc-ic li  a i:hover{
+    box-shadow: 0px 0px 6px 4px rgb(231, 220, 220);
+}
+
+
