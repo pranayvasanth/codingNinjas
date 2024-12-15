@@ -17,5 +17,8 @@ public class simple {
             System.out.println("Name:"+n);
             System.out.println("Age:"+a);
         }
+        else{
+            System.out.println("Not an Adult");
+        }
     }
 }
