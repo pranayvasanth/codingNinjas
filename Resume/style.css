@@ -1,75 +1,249 @@
-
-body{
-    margin: 0px;
+body {
+    margin: 0;
 }
 
-
-/* Body Header*/
-#body-head{
+/* Body Header */
+#body-head {
     height: 65vh;
     opacity: 0.9;
-    background-image: url("G:agumo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-/*Horizontal Lists*/
-.hori-list{
-    list-style: none;
-    padding-left: 0px;
-}
-.hori-list li{
-    display: inline-block;
-    margin: 15px 8px 0px 8px;
+    background: url("D:agumo.jpg") center/cover fixed;
 }
 
-.hori-list li a{
+/* Horizontal Lists */
+.hori-list,
+.soc-ic,
+.social-btn {
+    list-style: none;
+    padding: 0;
+}
+
+.hori-list li,
+.soc-ic li,
+.social-btn li {
+    display: inline-block;
+}
+
+.hori-list li {
+    margin: 15px 8px 0;
+}
+
+.hori-list li a {
     color: white;
     text-decoration: none;
     transition: color 0.5s, border-bottom 4s;
 }
-.hori-list li a:hover{
+
+.hori-list li a:hover {
     color: rgb(241, 140, 140);
     border-bottom: 1px solid white;
 }
-/* Text Center*/
-.text-center{
+
+/* Text Center */
+.text-center {
     text-align: center;
 }
-#name-so-con{
+
+#name-so-con {
     margin-top: 20vh;
 }
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
 
-/*name*/
-.name{
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+
+/* Name */
+.name {
     list-style: none;
     height: 110px;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-.name h1{
+
+.name h1 {
     color: rgb(190, 225, 190);
     display: inline-block;
 }
-.soc-ic{
-    list-style: none;
-    padding-left: 0px;
-}
-.soc-ic li{
-    display: inline-block;
-    margin: 0px 8px 0px 8px;
+
+.soc-ic li {
+    margin: 0 12px;
+    transition: transform 0.3s ease;
+    
 }
 
-.soc-ic li  a i{
+.soc-ic li a i {
     color: rgb(30, 8, 171);
     padding: 10px;
     font-size: 1rem;
     border-radius: 50%;
 }
 
-.soc-ic li  a i:hover{
-    box-shadow: 0px 0px 6px 4px rgb(231, 220, 220);
+.soc-ic li a i:hover {
+    box-shadow: 0 0 6px 4px rgb(231, 220, 220);
+    transform: translateY(-3px);
 }
 
 
+.social-img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-btn {
+    padding-left: 0;
+    text-align: left;
+}
+
+.social-btn li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-img {
+    width: 20px;
+    height: 20px;
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+/*Section heading*/
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    width: auto;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+/*Skill section*/
+.skills-display{
+    height: auto;
+    width: 70%;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.skill-p{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    display: inline-block;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 2.5px black;
+    margin: 9px;
+}
+.skill-p div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-na span{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 9px;
+}
+/* portfolio section*/
+.port-display{
+    width: 70%;
+    display: flex;
+	flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.port-p img{
+    height: 10rem;
+    width: 10rem;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+.mb-orange{
+    background-color: orange;
+}
+.mb-maroon{
+    background-color: maroon;
+}
+/*percentclass*/
+.efp{
+    width: 85%;
+    height: inherit;
+}
+ 
+.np{
+    width: 89%;
+    height: inherit;
+}
+.tp{
+    width: 10%;
+    height: inherit;
+}
+.fp{
+    width: 40%;
+    height: inherit;
+}
+.sp{
+    width: 60%;
+    height: inherit;
+}
+.ffp{
+    width: 55%;
+    height: inherit;
+}
