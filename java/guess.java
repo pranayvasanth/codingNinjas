@@ -12,23 +12,23 @@ public  class guess
             System.out.println("The Number reside betwenn 0 to 50 Try To get in 5 Tries ");
       
               
-                int numTogess=(int) (Math.random()*50);
+                int RandomNumber=(int) (Math.random()*50);
 
                 System.out.println("Guess The Number: ");
-                int ngused=sc.nextInt();
+                int userguess=sc.nextInt();
                  int i=1;
-                 if(ngused>50)
+                 if(userguess>50)
                     {
                         System.out.println("Enter value between 0 to 50 only");
                     }
                     else{
-            while(numTogess!=ngused) 
+            while(RandomNumber!=userguess) 
             { 
                 if(i!=6)
                 {   
-                        if ( ngused < numTogess) 
+                        if ( userguess < RandomNumber) 
                         {
-                          if (numTogess %2 ==0) 
+                          if (RandomNumber %2 ==0) 
                             {
                             System.out.println("Hint Your Number is divisible By 2\n");
                             }
@@ -37,12 +37,12 @@ public  class guess
                                 System.out.println(" Hint: Your Looking for Odd number:\n");
                             }
                             System.out.println("The Guess number is Higher \t Try No:"+i);
-                            ngused=sc.nextInt();
+                            userguess=sc.nextInt();
                             i++;
                         }
-                        else if (ngused> numTogess) 
+                        else if (userguess> RandomNumber) 
                         {
-                            if (numTogess %2 ==0) 
+                            if (RandomNumber %2 ==0) 
                             {
                                  System.out.println("Hint Your Number is divisible By 2 \n");
                             }
@@ -51,15 +51,15 @@ public  class guess
                                 System.out.println(" Hint: Your Looking for Odd number:\n");
                             }
                                 System.out.println("The Guess number is Lower \t Try No:"+i);
-                                ngused=sc.nextInt();
+                                userguess=sc.nextInt();
                                 i++;
                         }
                     
                 }
                 }
-                if(ngused == numTogess)
+                if(userguess == RandomNumber)
                 {
-                    System.out.println("YOu Guessed the Number !-) ["+numTogess+"]");
+                    System.out.println("YOu Guessed the Number !-) ["+RandomNumber+"]");
                 }
                 else
                 {
