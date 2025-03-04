@@ -221,6 +221,20 @@ section:nth-child(2n+1){
 .mb-maroon{
     background-color: maroon;
 }
+
+/* Contact section*/
+#contact{
+    width: auto;
+    color: white;
+    background: linear-gradient(45deg, #2857a4,#403066)
+}
+.cont-get{
+    font-size: 12px;
+}
+.cont-adr{
+    font-size: 15px;
+}
+
 /*percentclass*/
 .efp{
     width: 85%;
